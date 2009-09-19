@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="Products.todo">
+
+    <include package="plone.app.contentmenu" />
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <browser:resource
+        name="todoitem.css"
+        file="todoitem.css"
+        />
+
+    <browser:page
+        for="..interfaces.ITodoitem"
+        name="todoitem_view"
+        class=".todoitem.Todo_itemView"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        name="todo_list_tool"
+        class=".todo_list_tool.Todo_list_toolView"
+        permission="zope2.View"
+        />
+
+
+</configure>

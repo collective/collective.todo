@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="Products.todo.various"
+               version="20081111-01"
+               handler="Products.todo.setuphandlers.setupVarious"
+               title="miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>

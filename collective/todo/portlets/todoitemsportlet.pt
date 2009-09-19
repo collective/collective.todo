@@ -1,0 +1,28 @@
+<dl class="portlet portletTodoItemsPortlet"
+    i18n:domain="Products.todo.portlets">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           Todo items
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd" tal:repeat="item view/todoitems">
+        <ul>
+            <li>
+                <a tal:content="item/Title" tal:attributes="href python:item.getObject().absolute_url()">todo</a>
+            </li>
+        </ul>
+    </dd>
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <span>
+           &nbsp;
+        </span>
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>
