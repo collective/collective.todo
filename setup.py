@@ -5,7 +5,7 @@ version = '0.7'
 
 setup(name='collective.todo',
       version=version,
-      description="""Formerly Products.todo, this package aims to provide "simple" todo list functionality in Plone via a folderish (Dexterity) content type: Todo item."""
+      description="""Formerly Products.todo, this package aims to provide "simple" todo list functionality in Plone via a folderish (Dexterity) content type: Todo item.""",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
