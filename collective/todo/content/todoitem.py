@@ -8,9 +8,9 @@ from Products.Archetypes import atapi
 from Products.ATContentTypes.content import folder
 from Products.ATContentTypes.content import schemata
 
-from Products.todo import todoMessageFactory as _
-from Products.todo.interfaces import ITodoitem
-from Products.todo.config import PROJECTNAME
+from collective.todo import todoMessageFactory as _
+from collective.todo.interfaces import ITodoitem
+from collective.todo.config import PROJECTNAME
 
 TodoitemSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 

@@ -2,14 +2,14 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="Products.todo">
+    i18n_domain="collective.todo">
 
     <!-- Register the installation GenericSetup extension profile -->
     <genericsetup:registerProfile
       name="default"
-      title="Products.todo"
+      title="collective.todo"
       directory="profiles/default"
-      description="Products.todo"
+      description="collective.todo"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -21,7 +21,7 @@
     <!-- -*- extra stuff goes here -*- -->
 
     <subscriber
-        for="Products.todo.interfaces.ITodoitem
+        for="collective.todo.interfaces.ITodoitem
              Products.DCWorkflow.interfaces.IAfterTransitionEvent"
         handler=".events.handler.changeWorkflowStates"
     />

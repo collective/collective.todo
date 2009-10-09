@@ -8,8 +8,7 @@ from zope import schema
 from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
-#from Products.todo.portlets import TodoItemsPortletMessageFactory as _
-from Products.todo import todoMessageFactory as _
+from collective.todo import todoMessageFactory as _
 
 from zope.app.component.hooks import getSite
 
